@@ -2,6 +2,8 @@ from enum import Enum
 import subprocess
 
 
+# https://www.reddit.com/r/voidlinux/comments/13j4y4x/a_problem_with_gui_apps_that_require_root_access/
+# pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /path/to/app
 def command_as_root(command: str) -> str:
     return f"pkexec --user root {command}"
 
