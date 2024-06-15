@@ -3,7 +3,7 @@
 import { build } from "esbuild";
 
 await build({
-  entryPoints: ['src/index.ts'],
+  entryPoints: ['installer/src/main/index.ts'],
   outdir: 'dist',
   bundle: true,
   // target: "firefox60", // Since GJS 1.53.90

@@ -11,10 +11,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "yarn node esbuild.js",
-    "start:app": "gjs -m dist/index.js",
-    "dev": "GTK_DEBUG=interactive yarn start:app",
-    "start": "yarn build && yarn start:app",
-    "validate": "tsc --noEmit",
+    "start:no-build": "gjs -m dist/index.js",
+    "start": "yarn build && yarn start:no-build",
+    "dev": "GTK_DEBUG=interactive yarn start",
+    "typecheck": "tsc --project ./tsconfig.json",
     "clear": "rm -rf dist"
   },
   "devDependencies": {

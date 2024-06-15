@@ -25,7 +25,7 @@
     "next-env.d.ts",
     "**/*.ts",
     ".eslintrc.cjs",
-    "src/libs/python.ts",
+    "installer/src/libs/python.ts",
     "esbuild.js"
   ],
   "exclude": [

@@ -1,0 +1,6 @@
+{
+  "editor.autoIndent": "advanced",
+  "editor.guides.indentation": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+}
