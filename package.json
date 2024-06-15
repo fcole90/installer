@@ -2,11 +2,32 @@
   "name": "installer",
   "version": "0.0.1",
   "description": "\"Installer for Linux\"",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "git@github.com:fcole90/installer.git",
   "author": "Fabio Colella <fcole90@gmail.com>",
   "license": "MIT",
+  "type": "module",
+  "private": true,
   "scripts": {
-    "start": "gjs index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn node esbuild.js",
+    "start:app": "gjs -m dist/index.js",
+    "dev": "GTK_DEBUG=interactive yarn start:app",
+    "start": "yarn build && yarn start:app",
+    "validate": "tsc --noEmit",
+    "clear": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@ts-for-gir/cli": "workspace:^",
+    "esbuild": "^0.20.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@girs/gio-2.0": "^2.78.0-3.3.0",
+    "@girs/gjs": "^3.3.0",
+    "@girs/glib-2.0": "^2.78.0-3.3.0",
+    "@girs/gobject-2.0": "^2.78.0-3.3.0",
+    "@girs/graphene-1.0": "^1.0.0-3.3.0",
+    "@girs/gtk-4.0": "^4.12.5-3.3.0"
   }
 }
