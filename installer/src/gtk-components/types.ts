@@ -4,5 +4,6 @@ export type ApplicationInstance = Gtk.Application
 export type ApplicationWindowInstance = Gtk.ApplicationWindow
 export type Widget = Gtk.Widget
 export type Window = Gtk.Window
+export type Children = (Widget | null)[];
 
-export type FC<P = {}> = ((props?: P) => Widget | null)
+export type FC<P = {}> = ((props: P) => Widget | null)

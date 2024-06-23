@@ -5,6 +5,7 @@
       "ESNext"
     ],
     "types": [
+      "@girs/adw-1",
       "@girs/gjs",
       "@girs/gjs/dom",
       "@girs/gio-2.0",
