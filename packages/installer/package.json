@@ -1,0 +1,20 @@
+{
+  "name": "installer",
+  "version": "0.0.1",
+  "description": "\"Installer for Linux\"",
+  "main": "dist/index.js",
+  "repository": "git@github.com:fcole90/installer.git",
+  "author": "Fabio Colella <fcole90@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn node esbuild.js",
+    "start:no-build": "gjs -m dist/index.js",
+    "start": "yarn build && yarn start:no-build",
+    "dev": "GTK_DEBUG=interactive yarn start",
+    "typecheck": "tsc --project ./tsconfig.json",
+    "clear": "rm -rf dist"
+  }
+}

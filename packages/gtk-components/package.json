@@ -1,0 +1,11 @@
+{
+  "name": "gtk-components",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "repository": "git@github.com:fcole90/installer.git",
+  "author": "Fabio Colella <fcole90@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "private": true
+}

@@ -4,3 +4,5 @@ import { FC } from '../../types';
 const HeaderBar: FC = () => {
   return new Gtk.HeaderBar();
 }
+
+export default HeaderBar;
