@@ -1,7 +1,10 @@
 import Gtk from 'gi://Gtk?version=4.0';
-import { ApplicationWindowInstance, Widget } from '../types';
+import { ApplicationInstance, ApplicationWindowInstance, Widget } from '../types';
 
-interface ApplicationWindowProps extends Gtk.ApplicationWindow.ConstructorProperties {
+interface ApplicationWindowProps {
+  application: ApplicationInstance,
+  defaultHeight?: number,
+  defaultWidth?: number,
   header?: Widget
   child?: Widget | null
 }

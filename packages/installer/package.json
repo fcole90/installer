@@ -10,7 +10,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "yarn node esbuild.js",
+    "build": "yarn workspace gtk-components build ",
     "start:no-build": "gjs -m dist/index.js",
     "start": "yarn build && yarn start:no-build",
     "dev": "GTK_DEBUG=interactive yarn start",

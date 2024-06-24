@@ -1,7 +1,5 @@
-import Gtk from 'gi://Gtk?version=4.0';
-
-import type { FC } from '../../../../gtk-components/types';
-import { View } from '../../../../gtk-components';
+import type { FC } from 'gtk-components/types';
+import { View, Label } from 'gtk-components';
 
 const Example: FC = () => {
   return View({
@@ -9,7 +7,7 @@ const Example: FC = () => {
     justifyContent: "start",
     margin: 20,
     spacing: 10,
-    children: [new Gtk.Label({ label: 'Hello' })]
+    children: [Label({ text: "Hello" })]
   })
 
 }
