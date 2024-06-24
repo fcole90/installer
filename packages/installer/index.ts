@@ -1,6 +1,6 @@
 import system from 'system';
-import Application from '../gtk-components/Application';
-import MainWindow from './components/MainWindow';
+import Application from '../gtk-components/src/Application';
+import MainWindow from './src/main/components/MainWindow';
 
 
 const app = new Application({

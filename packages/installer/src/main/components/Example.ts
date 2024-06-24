@@ -1,10 +1,10 @@
 import Gtk from 'gi://Gtk?version=4.0';
 
-import type { FC } from '../../gtk-components/types';
-import Box from '../../gtk-components/components/Box';
+import type { FC } from '../../../../gtk-components/types';
+import View from '../../../../gtk-components/src/components/View';
 
 const Example: FC = () => {
-  return Box({
+  return View({
     direction: "column",
     justifyContent: "start",
     margin: 20,

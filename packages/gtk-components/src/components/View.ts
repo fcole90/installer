@@ -1,7 +1,7 @@
 import { addChildren } from "./componentsUtils";
 import { FlexBoxAlignItemsProp, FlexBoxDirectionProp, FlexBoxJustifyContentProp, MarginProps } from "../style/styleTypes";
 import { convertDirectionProps, convertMarginProps, convertJustifyProp, convertAlignItemsProp } from "../style/styleUtils";
-import { Children, FC } from "../types";
+import { Children, FC } from "../../types";
 import Gtk from 'gi://Gtk?version=4.0';
 
 interface Props extends MarginProps {
@@ -12,7 +12,7 @@ interface Props extends MarginProps {
   children?: Children,
 }
 
-const Box: FC<Props> = (props) => {
+const View: FC<Props> = (props) => {
   const box = new Gtk.Box({
     ...convertDirectionProps(props),
     ...convertMarginProps(props),
@@ -24,4 +24,4 @@ const Box: FC<Props> = (props) => {
 }
 
 export type BoxProps = Props;
-export default Box;
+export default View;

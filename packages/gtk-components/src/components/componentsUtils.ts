@@ -1,4 +1,4 @@
-import { Children, Widget } from "../types";
+import { Children, Widget } from "../../types";
 
 /**
  * Adds `child` as the last child to `box`.

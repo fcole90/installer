@@ -1,7 +1,7 @@
 import Gio from 'gi://Gio?version=2.0';
 import GLib from 'gi://GLib?version=2.0';
 import Gtk from 'gi://Gtk?version=4.0';
-import { ApplicationInstance, ApplicationWindowInstance } from './types';
+import { ApplicationInstance, ApplicationWindowInstance } from '../types';
 
 export interface ApplicationWindowProps {
   app: ApplicationInstance;

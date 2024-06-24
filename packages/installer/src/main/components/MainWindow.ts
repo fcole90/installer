@@ -1,7 +1,7 @@
 import Gtk from 'gi://Gtk?version=4.0';
 import TreeView from './TreeView';
-import { ApplicationWindowComponent } from '../../gtk-components/Application';
-import ApplicationWindow from '../../gtk-components/ApplicationWindow';
+import { ApplicationWindowComponent } from '../../../../gtk-components/src/Application';
+import ApplicationWindow from '../../../../gtk-components/src/ApplicationWindow';
 import Example from './Example';
 
 const MainWindow: ApplicationWindowComponent = ({ app }) => {

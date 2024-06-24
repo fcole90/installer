@@ -47,7 +47,7 @@ interface ConvertJustifyPropsProps {
   justifyContent?: FlexBoxJustifyContentProp;
 }
 
-type ConvertedJustifyProps  = {
+type ConvertedJustifyProps = {
   halign?: Gtk.Align,
 } | {
   valign?: Gtk.Align,
