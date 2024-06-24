@@ -1,7 +1,7 @@
-import Gio from 'gi://Gio?version=2.0';
 import GLib from 'gi://GLib?version=2.0';
 import Gtk from 'gi://Gtk?version=4.0';
 import { ApplicationInstance, ApplicationWindowInstance } from '../types';
+import system from 'system';
 
 export interface ApplicationWindowProps {
   app: ApplicationInstance;
@@ -25,7 +25,7 @@ export class Application {
     this.appInstance = new Gtk.Application();
   }
 
-  run(ARGV: string[]) {
+  run(ARGV?: string[]) {
     let window: ApplicationWindowInstance | undefined;
     this.appInstance.connect('startup', () => {
       window = this.props.ApplicationWindow({ app: this.appInstance })
@@ -33,7 +33,7 @@ export class Application {
     this.appInstance.connect('activate', () => {
       window?.show()
     });
-    this.appInstance.run([]);
+    this.appInstance.run([system.programInvocationName, ...(ARGV ?? [])]);
   };
 }
 

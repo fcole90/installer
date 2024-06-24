@@ -16,5 +16,8 @@
     "dev": "GTK_DEBUG=interactive yarn start",
     "typecheck": "tsc --project ./tsconfig.json",
     "clear": "rm -rf dist"
+  },
+  "devDependencies": {
+    "gtk-components": "*"
   }
 }
