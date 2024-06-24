@@ -1,5 +1,5 @@
 import system from 'system';
-import Application from '../gtk-components/src/Application';
+import { Application } from '../gtk-components';
 import MainWindow from './src/main/components/MainWindow';
 
 

@@ -1,7 +1,7 @@
 import Gtk from 'gi://Gtk?version=4.0';
 
 import type { FC } from '../../../../gtk-components/types';
-import View from '../../../../gtk-components/src/components/View';
+import { View } from '../../../../gtk-components';
 
 const Example: FC = () => {
   return View({
