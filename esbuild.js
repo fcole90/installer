@@ -13,4 +13,6 @@ await build({
   format: 'esm',
   // platform: 'node',
   external: ['gi://*', 'resource://*', 'gettext', 'system', 'cairo'],
+  keepNames: true,
+  minify: false,
 })

@@ -19,5 +19,8 @@
   },
   "devDependencies": {
     "gtk-components": "*"
+  },
+  "dependencies": {
+    "preact": "^10.22.0"
   }
 }
