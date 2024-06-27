@@ -1,5 +1,5 @@
-import { ContainerNode, h, render } from 'preact'
-import { Application } from '../gtk-components';
+import { ContainerNode, h } from 'preact'
+import { Application, render } from '../gtk-components';
 import MainWindow from './src/main/components/MainWindow';
 
 class GtkRootContainerNode implements ContainerNode {
@@ -62,7 +62,7 @@ const gtkRoot = new GtkRootContainerNode(0, null)
 var document = gtkRoot as unknown as Document
 
 const app = h('h1', null, 'Hello World!');
-// render(app, gtkRoot);
+render(app, gtkRoot);
 
 
 const gtkApp = new Application({
